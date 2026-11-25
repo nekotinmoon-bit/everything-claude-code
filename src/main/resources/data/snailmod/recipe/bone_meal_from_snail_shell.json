@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [ { "item": "snailmod:snail_shell" } ],
+  "result": { "id": "minecraft:bone_meal", "count": 4 }
+}
