@@ -109,7 +109,7 @@ public class FerretScreen extends AbstractContainerScreen<FerretMenu> {
         if (ferret != null) {
             // affection bar
             int barX = x + 8;
-            int barY = y + 82;
+            int barY = y + 86;
             int barW = 118;
             sunkenBox(g, barX, barY, barW, 8, 0xFF3A2A2A);
             int filled = (barW - 2) * ferret.getAffection() / FerretEntity.MAX_AFFECTION;
@@ -136,14 +136,14 @@ public class FerretScreen extends AbstractContainerScreen<FerretMenu> {
         }
         int hp = (int) Math.ceil(ferret.getHealth());
         Component health = Component.translatable("gui.cuteferrets.health", hp, (int) ferret.getMaxHealth());
-        g.drawString(this.font, health, 66, 78 - 2, 0xFF404040, false);
+        g.drawString(this.font, health, 66, 76, 0xFF404040, false);
     }
 
     @Override
     protected void renderTooltip(GuiGraphics g, int mouseX, int mouseY) {
         super.renderTooltip(g, mouseX, mouseY);
         int barX = leftPos + 8;
-        int barY = topPos + 82;
+        int barY = topPos + 86;
         FerretEntity ferret = menu.getFerret();
         if (ferret != null && mouseX >= barX && mouseX < barX + 118 && mouseY >= barY && mouseY < barY + 8) {
             g.renderTooltip(this.font, Component.translatable("gui.cuteferrets.affection.tooltip"), mouseX, mouseY);
