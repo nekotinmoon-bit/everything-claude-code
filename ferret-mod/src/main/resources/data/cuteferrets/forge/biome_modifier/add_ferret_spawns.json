@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#cuteferrets:spawns_ferrets",
+  "spawners": {
+    "type": "cuteferrets:ferret",
+    "weight": 6,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}
